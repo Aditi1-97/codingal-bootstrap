@@ -1,39 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-  <title>Typography</title>
+
+  <title> Bootstrap Container Fluid</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<style>
+    .hobby-card {
+      border-radius: 12px;
+      text-align: center;
+      padding: 40px;
+      color: white;
+      height: 220px;
+      display: flex;
+     flex-direction: column;
+     justify-content: center;
+    }
+
+     .hobby-card h3 {
+      font-size: 60px;            
+      margin-bottom: 15px;
+    }
+
+     .hobby-card h5 {
+      font-size: 22px;           
+    }
+
+    .art { 
+      background-color: #4db6ac;
+     }        
+
+    .reading { 
+    background-color: #f06292; }    
+
+    .gardening {
+     background-color: #81c784; }  
+
+    .photography { 
+    background-color: #64b5f6; }
+
+  </style>
 </head>
 <body>
-<h1 class="display-1">Welcome to Codingal</h1>
-<h1 class="display-2">Welcome to Codingal</h1>
-<h1 class="display-3">Welcome to Codingal</h1>
-<h1 class="display-4">Welcome to Codingal</h1>
 
-<p>Welcome to Codingal, <code>we love to code</code></p>
+  <!-- Hobby Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">My Hobbies</h2>
+    <div class="row g-4">
+      
+      <!-- Art -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="hobby-card art shadow">
+          <h3>🎨</h3>
+          <h5>Art</h5>
+        </div>
+      </div>
 
-<p>Hey we are learning <abbr title="Bootstrap is the framework of Css">Bootstrap</abbr></p>
+      <!-- Reading -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="hobby-card reading shadow">
+          <h3>📖</h3>
+          <h5>Reading</h5>
+        </div>
+      </div>
 
-<pre>function myFunc(){
-  console.log("Hello World")
-}
-myFunc()
-</pre>
+      <!-- Gardening -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="hobby-card gardening shadow">
+          <h3>🌱</h3>
+          <h5>Gardening</h5>
+        </div>
+      </div>
 
-<div class="blockquote">
-<p>Coding is fun as long as it is working</p>
-<footer class="blockquote-footer">Alex Hunter</footer>
-</div>
+      <!-- Photography -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="hobby-card photography shadow">
+          <h3>📷</h3>
+          <h5>Photography</h5>
+        </div>
+      </div>
 
-<dl>
-  <dt>Coffee</dt>
-  <dd>A hot drink</dd>
-
-  <dt>Cola</dt>
-  <dd>A refreshing drink</dd>
-</dl>
-
-    
+    </div>
+  </div>
 
 </body>
-</html>                                                                                                                                                         
+</html>
