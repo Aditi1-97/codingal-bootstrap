@@ -1,45 +1,109 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pagination</title>
+    <title>Activity Showcase</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <style>
+      .container {
+        padding-top: 2rem;
+      }
+      .card-parent {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+      .card-inner {
+        width: 350px;
+      }
+      .card-parent .parent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .section-divider {
+        margin: 3rem 0;
+      }
+    </style>
   </head>
+  <body>
+    <div class="container">
+      
+      <h2>Loading Spinner</h2>
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
 
-  <body class="container">
+      <hr class="section-divider">
 
-  <div style="margin-top: 200px;">
-   <h1>Pagination Buttons</h1>
+      <h2>Product Card</h2>
+      <div class="card-parent">
+        <div class="card card-inner">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ2rcPQXprsBWwM1RiJbjP4xLoKlPI1A6GOQ&s"
+            alt="Air Jordan 4" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">Nike Air Jordan 4</h3>
+            <p class="card-text">Very lightweight durable sneakers</p>
+            <div class="parent">
+              <button class="btn btn-dark">Buy Now</button>
+              <h5>$100</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="section-divider">
 
-  <ul class="pagination" style="margin-top: 100px;">
+      <h2>Different Pagination Styles</h2>
+      
+      <h3>Standard</h3>
+      <nav aria-label="Standard pagination">
+        <ul class="pagination">
+          <li class="page-item"> <a class="page-link" href="">Previous</a> </li>
+          <li class="page-item"> <a class="page-link" href="">1</a> </li>
+          <li class="page-item active"> <a class="page-link" href="">2</a> </li>
+          <li class="page-item"> <a class="page-link" href="">3</a> </li>
+          <li class="page-item"> <a class="page-link" href="">Next</a> </li>
+        </ul>
+      </nav>
 
-  <li class="page-item">
-    <a href="" class="page-link">Prev</a>
-  </li>
+      <h3>Large and Small</h3>
+      <nav aria-label="Large pagination">
+        <ul class="pagination pagination-lg">
+          <li class="page-item"> <a class="page-link" href="">Previous</a> </li>
+          <li class="page-item"> <a class="page-link" href="">1</a> </li>
+          <li class="page-item"> <a class="page-link" href="">2</a> </li>
+          <li class="page-item"> <a class="page-link" href="">Next</a> </li>
+        </ul>
+      </nav>
 
-  <li class="page-item">
-    <a href="" class="page-link">1</a>
-  </li>
+      <nav aria-label="Small pagination">
+        <ul class="pagination pagination-sm">
+          <li class="page-item"> <a class="page-link" href="">Previous</a> </li>
+          <li class="page-item"> <a class="page-link" href="">1</a> </li>
+          <li class="page-item"> <a class="page-link" href="">2</a> </li>
+          <li class="page-item"> <a class="page-link" href="">Next</a> </li>
+        </ul>
+      </nav>
+      
+      <h3>Centered and Right-aligned</h3>
+      <nav aria-label="Centered pagination">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled"> <a class="page-link" href="">Previous</a> </li>
+          <li class="page-item"> <a class="page-link" href="">1</a> </li>
+          <li class="page-item"> <a class="page-link" href="">2</a> </li>
+          <li class="page-item"> <a class="page-link" href="">Next</a> </li>
+        </ul>
+      </nav>
 
-  <li class="page-item">
-    <a href="" class="page-link">2</a>
-  </li>
+      <nav aria-label="Right-aligned pagination">
+        <ul class="pagination justify-content-end">
+          <li class="page-item"> <a class="page-link" href="">Previous</a> </li>
+          <li class="page-item"> <a class="page-link" href="">1</a> </li>
+          <li class="page-item"> <a class="page-link" href="">2</a> </li>
+          <li class="page-item"> <a class="page-link" href="">Next</a> </li>
+        </ul>
+      </nav>
 
-  <li class="page-item">
-    <a href="" class="page-link">3</a>
-  </li>
-
-  <li class="page-item">
-    <a href="" class="page-link">Next</a>
-  </li>
-
-  </ul>
-
-
-
-
-  </div>
-
-    
+    </div>
   </body>
 </html>
